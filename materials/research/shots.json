@@ -1,0 +1,24 @@
+[{
+  "startUrl": "https://www.lingoda.com",
+  "url": "https://www.lingoda.com/en/",
+  "screenshotUrl": "https://api.apify.com/v2/key-value-stores/S31fDjOKYEsgYYILw/records/screenshot_https___www_lingoda_com_ce99f32303949b098dbe21fab4a17ea0?signature=1Snb3eaYKEGUn121b5A4l&disableRedirect=true",
+  "screenshotKey": "screenshot_https___www_lingoda_com_ce99f32303949b098dbe21fab4a17ea0"
+},
+{
+  "startUrl": "https://www.vaynermedia.com",
+  "url": "https://vaynermedia.com/",
+  "screenshotUrl": "https://api.apify.com/v2/key-value-stores/S31fDjOKYEsgYYILw/records/screenshot_https___www_vaynermedia_com_58566cc60ea708223579efb5760f8a51?signature=LlzYAo7AUONXN2GHdzsX&disableRedirect=true",
+  "screenshotKey": "screenshot_https___www_vaynermedia_com_58566cc60ea708223579efb5760f8a51"
+},
+{
+  "startUrl": "https://www.sideshift.app/blog/ugc-portfolio-examples",
+  "url": "https://sideshift.app/blog/ugc-portfolio-examples",
+  "screenshotUrl": "https://api.apify.com/v2/key-value-stores/S31fDjOKYEsgYYILw/records/screenshot_https___www_sideshift_app_blog_ugc_portfolio_examples_8643fa518b72be138384c3de2d36b434?signature=u5oFSmummjbAyszneubH&disableRedirect=true",
+  "screenshotKey": "screenshot_https___www_sideshift_app_blog_ugc_portfolio_examples_8643fa518b72be138384c3de2d36b434"
+},
+{
+  "startUrl": "https://www.sideshift.app/blog/ugc-portfolio-examples",
+  "url": "https://sideshift.app/blog/ugc-portfolio-examples",
+  "screenshotUrl": "https://api.apify.com/v2/key-value-stores/S31fDjOKYEsgYYILw/records/screenshot_https___www_sideshift_app_blog_ugc_portfolio_examples_8643fa518b72be138384c3de2d36b434?signature=u5oFSmummjbAyszneubH&disableRedirect=true",
+  "screenshotKey": "screenshot_https___www_sideshift_app_blog_ugc_portfolio_examples_8643fa518b72be138384c3de2d36b434"
+}]
