@@ -193,10 +193,11 @@ html { scrollbar-color: var(--ink-3) var(--ink); }
 }
 /* з JS — лінія по кожному слову, малюється поверх літер */
 .blooper__bad s.is-split { text-decoration: none; }
-.strike-w { position: relative; }
+.blooper__bad s.is-split { position: relative; isolation: isolate; }
+.strike-w { position: relative; display: inline-block; }
 .strike-w::after {
-  content: ""; position: absolute; left: -.04em; right: -.32em; top: .57em; height: .14em;
-  background: #e0556a; border-radius: .07em; pointer-events: none;
+  content: ""; position: absolute; left: -.04em; right: -.32em; top: .545em; height: .14em;
+  background: #e0556a; border-radius: .07em; pointer-events: none; z-index: 2;
   transform-origin: left center;
   transition: transform 260ms linear; transition-delay: calc(var(--i, 0) * 230ms);
 }
