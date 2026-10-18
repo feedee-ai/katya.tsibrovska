@@ -186,24 +186,24 @@ html { scrollbar-color: var(--ink-3) var(--ink); }
 .blooper__take { margin: 0 0 16px; font-size: 1.5rem; color: var(--cherry); color: #e0556a; }
 .blooper__bad { margin: 0 0 18px; font: 700 clamp(1.25rem, 2vw, 1.6rem)/1.2 var(--f-display); letter-spacing: -.02em; }
 .blooper__bad s {
-  /* без JS — звичайне перекреслення поверх тексту */
+  /* без JS — звичайне тонке перекреслення поверх тексту */
   text-decoration: line-through;
-  text-decoration-thickness: .14em;
+  text-decoration-thickness: 2px;
   text-decoration-color: #e0556a;
 }
-/* з JS — лінія по кожному слову, малюється поверх літер */
-.blooper__bad s.is-split { text-decoration: none; }
-.blooper__bad s.is-split { position: relative; isolation: isolate; }
+/* з JS — тонка хвиляста лінія маркером поверх кожного слова */
+.blooper__bad s.is-split { text-decoration: none; position: relative; isolation: isolate; }
 .strike-w { position: relative; display: inline-block; }
 .strike-w::after {
-  content: ""; position: absolute; left: -.04em; right: -.32em; top: .545em; height: .14em;
-  background: #e0556a; border-radius: .07em; pointer-events: none; z-index: 2;
-  transform-origin: left center;
-  transition: transform 260ms linear; transition-delay: calc(var(--i, 0) * 230ms);
+  content: ""; position: absolute; left: -.04em; right: -.32em; top: .47em; height: .3em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 8' preserveAspectRatio='none'%3E%3Cpath d='M0 4 Q6 1.2 12 4 T24 4' fill='none' stroke='%23e0556a' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x 0 50% / .9em 100%;
+  pointer-events: none; z-index: 2;
+  clip-path: inset(0 0 0 0);
+  transition: clip-path 280ms linear; transition-delay: calc(var(--i, 0) * 240ms);
 }
 .strike-w:last-child::after { right: -.04em; }
 .blooper__fix { margin: 0; color: var(--chalk-2); }
-.js .blooper:not(.is-in) .strike-w::after { transform: scaleX(0); }
+.js .blooper:not(.is-in) .strike-w::after { clip-path: inset(0 100% 0 0); }
 
 /* ---------- Call sheet ---------- */
 .services { background: var(--paper); color: var(--paper-ink); }
