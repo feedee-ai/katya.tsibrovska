@@ -186,15 +186,23 @@ html { scrollbar-color: var(--ink-3) var(--ink); }
 .blooper__take { margin: 0 0 16px; font-size: 1.5rem; color: var(--cherry); color: #e0556a; }
 .blooper__bad { margin: 0 0 18px; font: 700 clamp(1.25rem, 2vw, 1.6rem)/1.2 var(--f-display); letter-spacing: -.02em; }
 .blooper__bad s {
-  /* лінія по центру малих літер, окремо на кожному рядку */
-  text-decoration: none;
-  background: linear-gradient(#e0556a, #e0556a) no-repeat 0 .57em / var(--strike, 100%) .14em;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  transition: background-size 800ms var(--ease-io);
+  /* без JS — звичайне перекреслення поверх тексту */
+  text-decoration: line-through;
+  text-decoration-thickness: .14em;
+  text-decoration-color: #e0556a;
 }
+/* з JS — лінія по кожному слову, малюється поверх літер */
+.blooper__bad s.is-split { text-decoration: none; }
+.strike-w { position: relative; }
+.strike-w::after {
+  content: ""; position: absolute; left: -.04em; right: -.32em; top: .57em; height: .14em;
+  background: #e0556a; border-radius: .07em; pointer-events: none;
+  transform-origin: left center;
+  transition: transform 260ms linear; transition-delay: calc(var(--i, 0) * 230ms);
+}
+.strike-w:last-child::after { right: -.04em; }
 .blooper__fix { margin: 0; color: var(--chalk-2); }
-.js .blooper:not(.is-in) .blooper__bad s { --strike: 0%; }
+.js .blooper:not(.is-in) .strike-w::after { transform: scaleX(0); }
 
 /* ---------- Call sheet ---------- */
 .services { background: var(--paper); color: var(--paper-ink); }

@@ -199,6 +199,15 @@
   let lang = "uk";
   try { lang = new URLSearchParams(location.search).get("lang") === "en" ? "en" : (localStorage.getItem("lang") || "uk"); } catch (e) {}
 
+  /* ---------- strikes: wrap words so the line paints over the glyphs ---------- */
+  function splitStrikes() {
+    $$(".blooper__bad s").forEach(el => {
+      const words = el.textContent.trim().split(/\s+/);
+      el.innerHTML = words.map((w, i) => `<span class="strike-w" style="--i:${i}">${w.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c])}</span>`).join(" ");
+      el.classList.add("is-split");
+    });
+  }
+
   function setLang(l) {
     lang = l === "en" ? "en" : "uk";
     const dict = lang === "en" ? EN : UK;
@@ -208,6 +217,7 @@
     $$(".lang button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
     document.title = lang === "en" ? "Katya Tsibrovska — turnkey TikTok for business · Kyiv" : UK_TITLE;
     try { localStorage.setItem("lang", lang); } catch (e) {}
+    splitStrikes();
     applyPrices();
     renderNiches();
     updateMsg();
