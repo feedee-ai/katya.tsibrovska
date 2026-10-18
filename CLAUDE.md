@@ -29,10 +29,11 @@ CDN Instagram закрыт сетью среды (`*.cdninstagram.com`, `*.fbcdn
 - [x] 1. Сбор: посты IG (лично, агентство, фото), TikTok — JSON + posts.md
 - [ ] 1b. Скачать медиа (ждёт доступа к CDN)
 - [x] 2. BRIEF.md, CLAUDE.md
-- [ ] 2. PRODUCT.md
-- [ ] 2.5 research.md
-- [ ] 3. DESIGN.md
-- [ ] 4. Сайт `site/`
+- [x] 2. PRODUCT.md
+- [x] 2.5 research.md
+- [x] 3. Концепция: `.impeccable/surfaces/site-index-html.md` (слейт/хлопушка). DESIGN.md — после финала
+- [x] 4. Сайт `site/` — собран, ждёт медиа (кадры hero, about, 6 роликов в «Перевіряю на собі»: `site/assets/media/*`, `site/assets/img/katya.webp`)
+- [x] Vercel проект `katya-tsibrovska` слинкован, превью задеплоено
 - [ ] 5. Проверка (Playwright 1440/390, 2 круга ревью)
 - [ ] 6. Деплой Vercel
 - [ ] 7. Отчёт
