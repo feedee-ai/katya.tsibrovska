@@ -18,23 +18,22 @@
 - Цены услуг (на сайте «за запитом», конфиг в `site/assets/config.js`).
 - Личный Telegram для заявок (сейчас форма → Instagram Direct, текст копируется).
 - Домен.
-- Разрешение показывать логотипы/названия клиентов GastroFamily и др. (взяты из постов агентства).
 - Детали кейса «20 000$ економії».
 
 ## Медиа
-CDN Instagram закрыт сетью среды (`*.cdninstagram.com`, `*.fbcdn.net` → 403). Нужно добавить их в Allowed domains, затем `python3 -I scripts/posts.py materials/instagram/posts-raw.json materials/instagram/posts.md materials/instagram/media` (так же для agency/ и photo/) скачает всё в `materials/*/media`.
+CDN Instagram закрыт сетью среды (403). По решению Александра медиа качаются через Apify: приватный актор `media-fetch` (id xkhmFMkC9t2f9cL3o) кладёт файлы в KV store, скрипт забирает: `python3 -I scripts/apify_fetch.py materials/instagram/posts-raw.json materials/instagram/media jpg|mp4 [shortcodes]`. Сырые медиа в git не коммитятся (`materials/*/media/` в .gitignore). Названия клиентов агентства на сайте показывать можно (подтвердил Александр).
 
 ## Чек-лист этапов
 - [x] 0. Доступы (Apify, Vercel ок; CDN Instagram закрыт)
 - [x] 1. Сбор: посты IG (лично, агентство, фото), TikTok — JSON + posts.md
-- [ ] 1b. Скачать медиа (ждёт доступа к CDN)
+- [x] 1b. Медиа скачаны через Apify (222 + 103 + 103 кадра, 14 видео), факты из каруселей — в BRIEF.md
 - [x] 2. BRIEF.md, CLAUDE.md
 - [x] 2. PRODUCT.md
 - [x] 2.5 research.md
 - [x] 3. Концепция: `.impeccable/surfaces/site-index-html.md` (слейт/хлопушка). DESIGN.md — после финала
 - [x] 4. Сайт `site/` — собран, ждёт медиа (кадры hero, about, 6 роликов в «Перевіряю на собі»: `site/assets/media/*`, `site/assets/img/katya.webp`)
 - [x] Vercel проект `katya-tsibrovska` слинкован, превью задеплоено
-- [ ] 5. Проверка (Playwright 1440/390, 2 круга ревью)
+- [x] 5. Проверка (Playwright 1440/390, 2 круга, impeccable detect)
 - [ ] 6. Деплой Vercel
 - [ ] 7. Отчёт
 
