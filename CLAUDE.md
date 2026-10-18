@@ -34,7 +34,7 @@ CDN Instagram закрыт сетью среды (403). По решению Ал
 - [x] 4. Сайт `site/` — собран, ждёт медиа (кадры hero, about, 6 роликов в «Перевіряю на собі»: `site/assets/media/*`, `site/assets/img/katya.webp`)
 - [x] Vercel проект `katya-tsibrovska` слинкован, превью задеплоено
 - [x] 5. Проверка (Playwright 1440/390, 2 круга, impeccable detect)
-- [ ] 6. Деплой Vercel
-- [ ] 7. Отчёт
+- [x] 6. Прод: https://katya-tsibrovska.vercel.app (защита Vercel переключена на стандартную — прод-домен публичный, превью закрыты)
+- [x] 7. Отчёт
 
-Страховочный сигнал: trig_01Jie5inGvDfczFwbYMqiwKi (12:35 UTC 18.10).
+Страховочные сигналы удалены — сайт сдан.
