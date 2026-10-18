@@ -186,9 +186,12 @@ html { scrollbar-color: var(--ink-3) var(--ink); }
 .blooper__take { margin: 0 0 16px; font-size: 1.5rem; color: var(--cherry); color: #e0556a; }
 .blooper__bad { margin: 0 0 18px; font: 700 clamp(1.25rem, 2vw, 1.6rem)/1.2 var(--f-display); letter-spacing: -.02em; }
 .blooper__bad s {
+  /* лінія по центру малих літер, окремо на кожному рядку */
   text-decoration: none;
-  background: linear-gradient(#e0556a, #e0556a) no-repeat 0 58% / var(--strike, 100%) 3px;
-  transition: background-size 900ms var(--ease-io);
+  background: linear-gradient(#e0556a, #e0556a) no-repeat 0 .57em / var(--strike, 100%) .14em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: background-size 800ms var(--ease-io);
 }
 .blooper__fix { margin: 0; color: var(--chalk-2); }
 .js .blooper:not(.is-in) .blooper__bad s { --strike: 0%; }
