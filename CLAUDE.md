@@ -22,7 +22,7 @@
 - Детали кейса «20 000$ економії».
 
 ## Медиа
-CDN Instagram закрыт сетью среды (`*.cdninstagram.com`, `*.fbcdn.net` → 403). Нужно добавить их в Allowed domains, затем `python3 -I <scratch>/posts.py` скачает всё в `materials/*/media`.
+CDN Instagram закрыт сетью среды (`*.cdninstagram.com`, `*.fbcdn.net` → 403). Нужно добавить их в Allowed domains, затем `python3 -I scripts/posts.py materials/instagram/posts-raw.json materials/instagram/posts.md materials/instagram/media` (так же для agency/ и photo/) скачает всё в `materials/*/media`.
 
 ## Чек-лист этапов
 - [x] 0. Доступы (Apify, Vercel ок; CDN Instagram закрыт)
