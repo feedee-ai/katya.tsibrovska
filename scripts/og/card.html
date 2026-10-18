@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../site/assets/fonts.css">
+<style>
+*{box-sizing:border-box;margin:0}
+html,body{width:1200px;height:630px;background:#15110f;overflow:hidden}
+body{position:relative;font-family:"Golos Text",sans-serif;color:#f3ece1}
+.photo{position:absolute;right:0;top:0;width:470px;height:630px;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.photo::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#15110f 0%,rgba(21,17,15,0) 22%);z-index:1}
+.hud{position:absolute;top:26px;left:52px;right:26px;display:flex;justify-content:space-between;z-index:2;font:600 15px/1 "Golos Text";letter-spacing:.12em;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.hud b{display:inline-flex;align-items:center;gap:8px;font-weight:600}
+.hud b::before{content:"";width:11px;height:11px;border-radius:50%;background:#ff3b30}
+.left{position:absolute;left:64px;top:0;width:700px;height:630px;display:flex;flex-direction:column;justify-content:center}
+.clap{position:relative;height:46px;width:640px;margin-bottom:22px}
+.clap i{position:absolute;left:0;right:0;height:22px;background:repeating-linear-gradient(-58deg,#f3ece1 0 30px,#15110f 30px 60px)}
+.clap i:first-child{top:0;border-radius:6px 6px 0 0;transform:rotate(-4deg);transform-origin:10px 100%}
+.clap i:last-child{bottom:0;background:repeating-linear-gradient(58deg,#f3ece1 0 30px,#15110f 30px 60px)}
+.mark{font:400 44px/1 "Marck Script";color:#d9662e;margin-bottom:14px}
+h1{font:800 66px/.98 "Unbounded";letter-spacing:-.045em}
+h1 span{color:#d9662e;display:block}
+.sub{margin-top:22px;font-size:23px;line-height:1.35;color:rgba(243,236,225,.78)}
+.stats{margin-top:30px;display:flex;gap:36px;align-items:flex-end}
+.stats div{display:grid;gap:6px}
+.stats strong{font:800 34px/1 "Unbounded";letter-spacing:-.04em}
+.stats strong small{font-size:.5em;color:#d9662e;margin-left:4px}
+.stats span{font-size:15px;color:rgba(243,236,225,.6)}
+.foot{position:absolute;left:64px;bottom:30px;font:600 15px/1 "Golos Text";letter-spacing:.14em;text-transform:uppercase;color:rgba(243,236,225,.5)}
+</style></head><body>
+<div class="photo"><img src="../../site/assets/img/katya.webp" alt=""><div class="hud"><b>REC</b><span>9:16</span></div></div>
+<div class="left">
+  <div class="clap"><i></i><i></i></div>
+  <p class="mark">Katerino4ka</p>
+  <h1>TikTok, який приводить <span>клієнтів</span></h1>
+  <p class="sub">Катя Цибровська · TikTok під ключ,<br>навчання і зйомки в Києві</p>
+  <div class="stats">
+    <div><strong>2,8<small>млн</small></strong><span>переглядів у ролика клієнта</span></div>
+    <div><strong>2<small>роки</small></strong><span>в мережі GastroFamily</span></div>
+  </div>
+</div>
+</body></html>
