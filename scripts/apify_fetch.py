@@ -25,7 +25,7 @@ os.makedirs(out, exist_ok=True)
 jobs = [j for j in jobs if not os.path.exists(os.path.join(out, j[1]))]
 print(len(jobs), 'files to fetch'); sys.stdout.flush()
 if not jobs: sys.exit()
-ACTOR = os.environ.get('MEDIA_ACTOR', 'xkhmFMkC9t2f9cL3o')  # приватный актор media-fetch в аккаунте Apify
+ACTOR = os.environ.get('MEDIA_ACTOR', 'xkhmFMkC9t2f9cL3o')  # после смены аккаунта: id из scripts/apify_media_fetch/create.py  # приватный актор media-fetch в аккаунте Apify
 run = api(f'/acts/{ACTOR}/runs?memory=1024&timeout=1800', {'files': [{'url': u, 'key': k} for u, k in jobs], 'concurrency': 16})['data']
 rid, kv = run['id'], run['defaultKeyValueStoreId']
 print('run', rid); sys.stdout.flush()

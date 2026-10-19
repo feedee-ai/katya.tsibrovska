@@ -38,3 +38,11 @@ CDN Instagram закрыт сетью среды (403). По решению Ал
 - [x] 7. Отчёт
 
 Страховочные сигналы удалены — сайт сдан.
+
+## В работе (19.10): правки из Telegram-чата
+Александр прислал экспорт чата с правками и видео: Google Drive, файл `ChatExport_2026-10-19.zip` (59 МБ), id `1yNBGcq1_zAjuQzYYUWOlnxySbo9s_YUo`, владелец fedoristovaleks@gmail.com.
+- Drive-коннектор (fedoristov97) чужие файлы не видит, drive.google.com закрыт сетью, старый Apify упёрся в месячный лимит.
+- Александр подключает новый Apify (переменная `APIFY_TOKEN`). Дальше:
+  1. `python3 -I scripts/apify_media_fetch/create.py` — создать актор media-fetch в новом аккаунте, обновить id в `scripts/apify_fetch.py` (или `MEDIA_ACTOR=<id>`).
+  2. Скачать архив: запустить актор с `{"files":[{"url":"https://drive.usercontent.google.com/download?id=1yNBGcq1_zAjuQzYYUWOlnxySbo9s_YUo&export=download&confirm=t","key":"chat.zip"}]}` (файл должен быть доступен «всем по ссылке»), забрать из KV в `materials/telegram/`.
+  3. Распаковать, выписать все правки списком в `materials/telegram/EDITS.md`, внести, подставить видео, проверить 1440/390, задеплоить, отчитаться по каждому пункту.
