@@ -118,7 +118,101 @@
     "voices.q6": "“One of the most important modules, I think, was writing a full strategy: you need more than random videos and trends, everything has to be thought through”",
     "voices.a6": "Bohdana, TikTok course",
     "voices.q7": "“At first there were lots of doubts and fears, but I never once regretted it. Katya explains everything simply, clearly and without fluff”",
-    "voices.a7": "Daryna Shevchenko, TikTok course"
+    "voices.a7": "Daryna Shevchenko, TikTok course",
+    /* правки 19.10 — перекривають старі ключі вище */
+    "nav.tiktok": "TikTok",
+    "nav.shoots": "Photo & video",
+    "nav.cta": "Diagnostic call",
+    "slate.cameraVal": "phone & pro camera",
+    "hero.lead": "I’m KATERINO4KA. I run TikTok for brands end to end: strategy, scripts, filming, editing, posting. I also do personal and commercial photo and video shoots — so you can book an empathetic videographer for your celebration, too.",
+    "hero.cta2": "Photo & video shoots",
+    "hero.note": "Videos I filmed for businesses reached up to 4 million views. Step one is a diagnostic call about your business.",
+    "clients.label": "Among my clients",
+    "clients.more": "plus Barsuk, Philadelphia Roll&amp;Bowl, Food&amp;Kyiv, Linden, Momotsha Store, Neon.Planet",
+    "doors.t.k": "For business",
+    "doors.t.t": "TikTok that brings you customers",
+    "doors.t.m": "Up to 4M views · 2 years with GastroFamily · Waffle Bar, Zviropolis, Pancake Mill",
+    "doors.t.go": "Cases and a diagnostic call",
+    "doors.s.k": "Personal & commercial",
+    "doors.s.t": "Photo and video shoots in Kyiv",
+    "doors.s.m": "Portraits, weddings, birthdays, gender reveals, dance · all raw files",
+    "doors.s.go": "Work samples and booking a date",
+    "services.lead": "For businesses, for those who learn, and for anyone who wants beautiful shots of themselves. Pick your scene.",
+    "svc.tiktok.d": "I take over your brand’s whole TikTok. You run the business, and the account brings customers and awareness organically.",
+    "svc.tiktok.s3": "Scripts that integrate your product",
+    "svc.tiktok.s4": "Filming with your staff or actors",
+    "svc.tiktok.s6": "Posting and a review of what worked and what didn’t",
+    "svc.tiktok.note": "One video, three platforms: TikTok, Instagram Reels and YouTube Shorts. A Barsuk video got 583K views on TikTok and 1.1M on Instagram.",
+    "svc.boost.s1": "11 modules, no three-hour lectures",
+    "svc.photo.t": "Photo shoots",
+    "svc.photo.d": "Personal and commercial photo shoots in Kyiv: portraits, couples, love stories, business content.",
+    "svc.photo.s1": "Edited photos plus all raw files",
+    "svc.photo.s2": "A video as a gift if there’s time left",
+    "svc.photo.s3": "From two hours, the hourly rate goes down",
+    "svc.photo.cta": "Pick a photo shoot date",
+    "svc.video.t": "Video shoots",
+    "svc.video.d": "Personal and commercial shoots on a pro camera: weddings, birthdays, gender reveals, dance.",
+    "svc.video.s1": "You get all raw files; editing is an add-on",
+    "svc.video.s2": "Photos too if there’s time left",
+    "svc.video.s3": "From two hours, the hourly rate goes down",
+    "svc.video.cta": "Pick a video shoot date",
+    "svc.shoot.cta": "Pick a shoot date",
+    "cases.lead": "Views are the goal, but what matters is what happens after them: questions in the comments, bookings, sales.",
+    "cases.f.k4": "followers in 3 months",
+    "takes.title": "Videos I filmed for businesses",
+    "takes.lead": "Real TikTok views. On camera — their own staff, filmed on a phone.",
+    "takes.cta": "I want videos like these",
+    "biz.1": "A promo that brought the venue its sales record",
+    "biz.2": "A kitchen sketch. 1.1M on Instagram",
+    "biz.3": "“Still feeding your dog from the table?”",
+    "biz.4": "A vet explains which fruit dogs can eat",
+    "biz.5": "POV: you work in hospitality",
+    "biz.6": "Staff introduce a new item",
+    "biz.7": "Chef and sous-chef on camera",
+    "biz.8": "A product intro that sold 5 kits",
+    "shoots.title": "Photos and videos you recognise yourself in",
+    "shoots.lead": "Personal and commercial shoots in Kyiv: photo sessions, weddings, birthdays, gender reveals, dance. Edited photos, all raw files, video on a pro camera.",
+    "shoots.vtitle": "Video shoots",
+    "shoots.v1": "Dance shoot",
+    "shoots.v2": "A look in the city",
+    "shoots.v3": "Dance team",
+    "about.title": "Hi, I’m Katya!",
+    "about.p1": "I’ve been filming since I was 14 — and it’s still my favourite thing. I grew up in the Cherkasy region and work in Kyiv. For two years I ran TikTok for the GastroFamily chain, and now I create content for top businesses on the market and capture important moments at personal shoots.",
+    "about.k3": "Format",
+    "about.v3": "TikTok · photo · video",
+    "about.v4": "phone &amp; pro camera",
+    "board.d3": "We integrate your product into scripts to get results.",
+    "board.d4": "Native, on a phone or a pro camera. Your staff open up on camera.",
+    "voices.gBiz": "Business and learning",
+    "voices.gShoot": "Photo and video shoots",
+    "voices.b1": "“As easy, comfortable and fast as it gets. The videos came out light, fun, dynamic and informative at the same time. Thanks to just a few videos we’ve already sold 5 kits”",
+    "voices.b1a": "owner of Patsiukerka, a rodent pet shop",
+    "voices.b2": "“Katya, the way you build strategies is amazing — everything is so detailed and clearly thought through”",
+    "voices.b2a": "Bohdana, after a consultation",
+    "voices.b3": "“At first there were lots of doubts and fears, but I never once regretted it. Katya explains everything simply, clearly and without fluff”",
+    "voices.b3a": "Daryna Shevchenko, TikTok course",
+    "voices.b4": "“One of the most important modules, I think, was writing a full strategy: you need more than random videos and trends, everything has to be thought through”",
+    "voices.b4a": "Bohdana, TikTok course",
+    "voices.s1": "“Incredible work! We were sure it would be great, and you confirmed it — and even exceeded our expectations. So easy, responsible, unnoticeable during the celebration — and such a gorgeous result”",
+    "voices.s1a": "celebration video shoot",
+    "voices.s2": "“Katya, you really need a gift and a vision for this. The sound, the video, the song. That’s some serious work)”",
+    "voices.s2a": "after a video shoot",
+    "voices.s3": "“Thank you for such gorgeous photos and videos! So much material) I’m shocked we filmed all that in two hours)”",
+    "voices.s3a": "photo and video, a 2-hour shoot",
+    "voices.s4": "“I really appreciate that you told me honestly right away it was your first gender reveal shoot — but I trusted you and never regretted it for a second. The videos turned out wonderful. It’s a memory that will stay with me for life!”",
+    "voices.s4a": "gender reveal video shoot",
+    "voices.s5": "“Every frame is chosen so well: the light, the shadows, the angles — everything. I love it, exactly as I wanted”",
+    "voices.s5a": "after a photo shoot",
+    "voices.s6": "“Got my photos — and I’m thrilled! Every frame is a little masterpiece”",
+    "voices.s6a": "photo shoot client",
+    "voices.s7": "“I was so nervous at first, but it all turned out much simpler thanks to you. You guided me, supported me and did a great job”",
+    "voices.s7a": "photo shoot client",
+    "faq.a3": "No. For TikTok we film on a phone — it makes content feel native to viewers. For personal shoots and celebrations I bring a pro camera.",
+    "book.o4": "Photo shoot",
+    "book.o5": "Video shoot",
+    "book.how1": "Tap the button — the text is copied automatically",
+    "book.how2": "A chat with me opens in Instagram",
+    "book.how3": "<b>Paste the text</b> into the message field and send it"
   };
 
   const RUB = {
@@ -134,7 +228,7 @@
       bakery: ["кондитерська", [
         ["Торт від ескізу до коробки за хвилину", "Процес продає краще за готовий результат."],
         ["Реакція іменинника, коли відкривають коробку", "Емоція, яку хочеться повторити для своїх."],
-        ["Скільки коштує торт на 2 кг і з чого ця ціна", "Прозорість ціни знімає страх «а раптом дорого»."]]],
+        ["Скільки коштує торт на 2 кг і чому така ціна", "Прозорість ціни знімає страх «а раптом дорого»."]]],
       beauty: ["салон краси", [
         ["До і після за 20 секунд, без фільтрів", "Результат майстра, який неможливо підробити."],
         ["Майстриня пояснює: чого не робити вдома", "Користь, яку зберігають, і експертність без самохвальби."],
@@ -150,7 +244,7 @@
       shop: ["магазин", [
         ["Розпаковка нового надходження: руки, звук, ціна", "Новинка з ціною в кадрі приводить у магазин, а не лише в коментарі."],
         ["Образ на три бюджети", "Людина бачить себе в одному з варіантів."],
-        ["Продавчиня радить, що взяти в подарунок", "Обличчя магазину, до якого хочеться прийти особисто."]]],
+        ["Консультант радить, що взяти в подарунок", "Обличчя магазину, до якого хочеться прийти особисто."]]],
       expert: ["експерт", [
         ["Одне питання з коментарів — одна відповідь", "Аудиторія сама підказує теми, а ви стаєте тим, кого питають."],
         ["Помилка, яку я бачу найчастіше", "Конкретика показує досвід краще за регалії."],
@@ -184,7 +278,7 @@
       shop: ["shop", [
         ["Unboxing new stock: hands, sound, price", "A new item with its price on screen brings people to the shop, not just to the comments."],
         ["One outfit, three budgets", "Viewers see themselves in one of the options."],
-        ["The shop assistant’s gift picks", "A face of the shop people want to visit in person."]]],
+        ["The sales consultant’s gift picks", "A face of the shop people want to visit in person."]]],
       expert: ["expert", [
         ["One question from the comments, one answer", "The audience suggests topics, and you become the person they ask."],
         ["The mistake I see most often", "Specifics show experience better than titles."],
@@ -402,8 +496,8 @@
   /* ---------- booking ---------- */
   const form = $("#book"), msgEl = $("#book-msg"), hint = $("#book-hint"), tg = $("#book-tg");
   const SVC = {
-    uk: { tiktok: "TikTok для бізнесу (діагностика)", consult: "Консультація 60 хв", learn: "Навчання: інтенсив / Zaya Boost", shoot: "Фото / відеозйомка" },
-    en: { tiktok: "TikTok for business (diagnostic call)", consult: "60-min consultation", learn: "Learning: intensive / Zaya Boost", shoot: "Photo / video shoot" }
+    uk: { tiktok: "TikTok для бізнесу (діагностика)", consult: "Консультація 60 хв", learn: "Навчання: інтенсив / Zaya Boost", photo: "Фотосесія", video: "Відеозйомка" },
+    en: { tiktok: "TikTok for business (diagnostic call)", consult: "60-min consultation", learn: "Learning: intensive / Zaya Boost", photo: "Photo shoot", video: "Video shoot" }
   };
   function setService(v) { const r = form && form.querySelector(`input[value="${v}"]`); if (r) { r.checked = true; updateMsg(); } }
   $$("[data-pick]").forEach(a => a.addEventListener("click", () => setService(a.dataset.pick === "consult" ? "consult" : a.dataset.pick)));
@@ -439,7 +533,9 @@
     if (!ok) { hint.textContent = lang === "en" ? "Add your name and a way to reach you." : "Додайте імʼя і контакт, щоб я могла відповісти."; hint.classList.remove("is-done"); return; }
     const text = buildMsg();
     try { await navigator.clipboard.writeText(text); } catch (err) {}
-    hint.textContent = lang === "en" ? "Copied. Paste it into the chat that just opened." : "Скопійовано. Вставте текст у діалог, що відкрився.";
+    hint.innerHTML = lang === "en"
+      ? "✓ Text copied. Now paste it into the Instagram chat and send.<small>Long-press the message field → Paste.</small>"
+      : "✓ Текст скопійовано. Тепер вставте його в діалог в Instagram і надішліть.<small>Затисніть поле повідомлення → «Вставити».</small>";
     hint.classList.add("is-done");
     window.open(`https://ig.me/m/${S.instagram || "katya.tsibrovska"}`, "_blank", "noopener");
   });
