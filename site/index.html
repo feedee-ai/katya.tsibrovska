@@ -67,6 +67,30 @@
 </script>
 <script src="/assets/config.js?v=202610191200" defer></script>
 <script src="/assets/site.js?v=202610191200" defer></script>
+<style id="bro-credit-css">
+.bro-credit:not(.foot__made){grid-column:1/-1;flex-basis:100%;width:100%;max-width:none;box-sizing:border-box;display:flex;justify-content:center;margin:clamp(28px,4vw,44px) 0 0;padding:18px 0 0;border-top:1px solid color-mix(in srgb,currentColor 14%,transparent);text-align:center}
+.bro-credit a{display:inline-flex;align-items:center;gap:.5em;font-size:12.5px;line-height:1.2;letter-spacing:.01em;font-weight:400;color:inherit;text-decoration:none;opacity:.72;transition:opacity .25s ease;-webkit-tap-highlight-color:transparent}
+.bro-credit a:focus-visible{opacity:1;outline:1px solid currentColor;outline-offset:4px;border-radius:2px}
+.bro-credit svg{width:15px;height:15px;flex:none;fill:currentColor}
+.bro-credit b{font-weight:600;letter-spacing:.08em;background:linear-gradient(100deg,currentColor 0 40%,#14b8a6 50%,currentColor 60% 100%) 100% 0/250% 100% no-repeat;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.bro-credit i{font-style:normal;display:inline-block;transition:transform .3s cubic-bezier(.22,1,.36,1)}
+.bro-credit [data-l]{display:none}
+.bro-credit [data-l=en],html[lang^=uk] .bro-credit [data-l=uk],html[lang^=ru] .bro-credit [data-l=ru],html[lang^=es] .bro-credit [data-l=es]{display:inline}
+html[lang^=uk] .bro-credit [data-l=en],html[lang^=ru] .bro-credit [data-l=en],html[lang^=es] .bro-credit [data-l=en]{display:none}
+.bro-credit.is-lit svg{animation:bro-spin 1.1s cubic-bezier(.34,1.56,.64,1)}
+.bro-credit.is-lit b{animation:bro-glint 1.3s .15s cubic-bezier(.22,1,.36,1)}
+@media (hover:hover){
+.bro-credit a:hover{opacity:1}
+.bro-credit a:hover svg{animation:bro-spin2 .9s cubic-bezier(.34,1.56,.64,1)}
+.bro-credit a:hover b{animation:bro-glint2 .9s cubic-bezier(.22,1,.36,1)}
+.bro-credit a:hover i{transform:translate(2px,-2px)}
+}
+@keyframes bro-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes bro-spin2{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes bro-glint{from{background-position:100% 0}to{background-position:0 0}}
+@keyframes bro-glint2{from{background-position:100% 0}to{background-position:0 0}}
+@media (prefers-reduced-motion:reduce){.bro-credit *{animation:none!important;transition:none!important}}
+</style>
 </head>
 <body class="theme-light">
 <a class="skip" href="#main" data-i18n="skip">До змісту</a>
@@ -664,6 +688,10 @@
     </ul>
     <p class="foot__fine"><span data-i18n="foot.fine">Катерина Цибровська · Київ</span> · <span id="year">2026</span></p>
   </div>
+  <!-- bro-credit -->
+  <p class="bro-credit"><a href="https://2brolab.com/?utm_source=katya-tsibrovska&amp;utm_medium=referral&amp;utm_campaign=site_credit" target="_blank" rel="noopener"><svg viewBox="216 196 819 791" aria-hidden="true" focusable="false"><g transform="translate(0,1254) scale(0.1,-0.1)"><path d="M6190 10539 c-375 -42 -736 -198 -1025 -441 -83 -70 -526 -513 -1976 -1973 -657 -662 -704 -717 -830 -979 -111 -231 -157 -412 -166 -657 -9 -240 21 -427 102 -639 198 -520 687 -950 1225 -1077 84 -20 142 -26 292 -30 102 -3 197 -3 211 1 23 5 25 12 31 83 12 128 53 314 99 445 l44 123 -201 0 c-184 1 -209 3 -296 27 -189 51 -338 139 -486 286 -137 137 -228 286 -280 459 -38 125 -45 338 -16 469 46 207 124 353 275 512 250 264 2449 2459 2512 2507 133 102 280 168 456 206 89 19 123 21 268 16 177 -5 260 -21 385 -74 176 -73 363 -228 467 -385 212 -322 201 -722 -27 -1065 -49 -73 -249 -278 -1269 -1299 -667 -666 -1240 -1247 -1275 -1290 -427 -529 -535 -1202 -293 -1818 209 -532 676 -974 1216 -1150 599 -197 1270 -77 1747 312 41 33 644 634 1340 1334 1383 1391 1334 1338 1445 1571 110 228 144 374 152 640 6 216 -3 315 -48 486 -110 420 -389 792 -789 1053 -197 129 -435 227 -635 263 -174 31 -501 32 -509 2 -47 -176 -139 -385 -236 -535 l-49 -77 208 -7 c416 -13 609 -63 837 -214 355 -236 568 -638 525 -990 -6 -50 -20 -126 -31 -169 -24 -95 -103 -261 -156 -331 -21 -28 -583 -598 -1249 -1266 -1286 -1291 -1261 -1267 -1442 -1353 -89 -43 -193 -78 -298 -101 -118 -26 -350 -24 -473 4 -487 111 -861 497 -959 989 -23 116 -22 339 1 444 36 168 115 350 200 463 24 32 611 626 1303 1320 1149 1151 1265 1270 1325 1361 203 307 291 588 291 930 0 265 -52 480 -173 714 -317 613 -1042 982 -1770 900z"/></g></svg><span data-l="uk">Сайт створено в</span><span data-l="ru">Сайт создан в</span><span data-l="es">Web creada por</span><span data-l="en">Website by</span> <b>2BRO.LAB</b><i aria-hidden="true">↗</i></a></p>
+  <script>(()=>{const e=document.querySelector('.bro-credit');if(!e||!('IntersectionObserver' in window))return;const o=new IntersectionObserver(s=>{if(s[0].isIntersecting){e.classList.add('is-lit');o.disconnect()}},{threshold:.6});o.observe(e)})()</script>
+  <!-- /bro-credit -->
 </footer>
 
 <a class="dock btn" href="#booking" id="dock" data-i18n="dock">Записатися на діагностику</a>
