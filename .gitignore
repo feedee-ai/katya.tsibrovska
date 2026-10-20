@@ -5,4 +5,4 @@ node_modules
 materials/*/media/
 materials/research/*.png
 materials/telegram/chat.zip
-materials/telegram/export/
+materials/telegram/export*/
