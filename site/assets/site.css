@@ -579,10 +579,9 @@ html[lang="en"] .take__views::after { content: " views"; }
 /* ---------- Shoot videos ---------- */
 .shoots__video { margin: clamp(24px, 3vw, 40px) auto 28px; }
 .shoots__sub { margin: 0 0 18px; font: 700 clamp(1.2rem, 2vw, 1.6rem)/1.1 var(--f-display); letter-spacing: -.02em; }
-.vclips { display: grid; grid-template-columns: repeat(3, minmax(0, 180px)) minmax(0, 400px); gap: clamp(10px, 1.2vw, 16px); align-items: start; }
+.vclips { display: grid; grid-template-columns: repeat(4, minmax(0, 200px)); gap: clamp(10px, 1.2vw, 16px); align-items: start; }
 .vclip { margin: 0; }
 .vclip video { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 14px; background: var(--ink-2); }
-.vclip--wide video { aspect-ratio: 576 / 402; }
 .vclip figcaption { margin-top: 8px; font-size: .88rem; color: var(--chalk-3); }
 
 /* ---------- Voices groups ---------- */
@@ -620,8 +619,7 @@ html[lang="en"] .take__views::after { content: " views"; }
   .blooper, .blooper + .blooper { padding: 24px 0; border-right: 0; border-bottom: 1.5px solid var(--line); }
   .room__grid, .about__grid, .faq__grid, .booking__grid, .doors__grid { grid-template-columns: 1fr; }
   .clients__list { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 22px; }
-  .vclips { grid-template-columns: repeat(3, minmax(0, 150px)); }
-  .vclip--wide { grid-column: 1 / -1; max-width: 480px; }
+  .vclips { grid-template-columns: repeat(2, minmax(0, 160px)); }
   .room__board { position: static; }
   .case-list { grid-template-columns: 1fr; }
   .case--big { grid-template-columns: 1fr; align-items: start; }
